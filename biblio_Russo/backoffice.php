@@ -1,3 +1,7 @@
+<?php
+include './autentication.inc';
+include './config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 

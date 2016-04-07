@@ -1,11 +1,10 @@
 
 <?php
-include './autentication.inc';
-include './config.php';
 include './classes/Autore.php';
 include './classes/AutoreDal.php';
 include './classes/DataManager.php';
 include './classes/Editore.php';
+include './classes/EditoreDal.php';
 include './classes/Libri.php';
 
 ?>
@@ -32,6 +31,9 @@ include './classes/Libri.php';
                 echo $libro->stampa_elenco();
                 $autore = new AutoreDal();
                 echo $autore->stampa_elenco();
+                //tabella editore
+                $editore=new EditoreDal();
+                echo $editore->stampa_elenco();
                    ?>
 </div> 
           
