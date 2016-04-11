@@ -118,6 +118,7 @@ class libri {
         
     }
     public function stampa_elenco(){
+        
          $msg="<table border=1>";
          $msg .="<tr><th>Codice Isbn</th>"
                  . "<th>Autore</th>"
@@ -126,6 +127,7 @@ class libri {
                   . "<th>Numero Pagine</th>"
                  . "<th>prezzo</th>"
                  . "<th>data di Acquisto</th>"
+                 . "<th>Modifica</th>"
                  . "</tr>";
          foreach (self::getAll() as $obj){
             $msg.="<tr>"
@@ -136,7 +138,7 @@ class libri {
                     ."<td>".$obj->numero_pagine."</td>"
                     ."<td>".$obj->prezzo."</td>"
                     ."<td>".$obj->data_di_acquisto."</td>"
-                    
+                    ."<th><input type='button' name='modifica' value='modifica'></th>"
                  . "</tr>";
          }           
              
