@@ -68,7 +68,7 @@ include './config.php';
         <div class="row">
             <div class="col-lg-12 text-center">
             
-            <?php include './cms/inserisci.php' ?>
+            <?php include './cms/Administration.php' ?>
            
             
             </div>
