@@ -99,6 +99,12 @@ class libri {
          return $this->get($sql);
         
     }
+    function getAll_orderbydesc(){
+         $sql="Select *  from libri ORDER BY `data_di_acquisto` DESC";
+         
+         return $this->get($sql);
+        
+    }
     function get($sql){
          
          $rs=  mysql_query($sql);
@@ -146,6 +152,35 @@ class libri {
          $msg .="</table>";
          return $msg;
      }
+     public function stampa_elenco_ordine_decrescente(){
+        
+         $msg="<table border=1>";
+         $msg .="<tr><th>Codice Isbn</th>"
+                 . "<th>Autore</th>"
+                 . "<th>Editore</th>"
+                 . "<th>Titolo</th>"
+                  . "<th>Numero Pagine</th>"
+                 . "<th>prezzo</th>"
+                 . "<th>data di Acquisto</th>"
+                 . "<th>Modifica</th>"
+                 . "</tr>";
+         foreach (self::getAll_orderbydesc() as $obj){
+            $msg.="<tr>"
+                    ."<td>".$obj->codice_libro."</td>"
+                    ."<td>".$obj->fkAutore."</td>"
+                    ."<td>".$obj->fkEditore."</td>"
+                    ."<td>".$obj->titolo."</td>"
+                    ."<td>".$obj->numero_pagine."</td>"
+                    ."<td>".$obj->prezzo."</td>"
+                    ."<td>".$obj->data_di_acquisto."</td>"
+                    ."<th><input type='button' name='modifica' value='modifica'></th>"
+                 . "</tr>";
+         }           
+             
+             
+         $msg .="</table>";
+         return $msg;
+     } 
     
 
 
