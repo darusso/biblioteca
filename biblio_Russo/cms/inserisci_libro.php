@@ -42,6 +42,7 @@ header('Location: '.$newURL);*/
         }
         //else{
         ?>
+<h1> Inserisci Libro </h1>
 <form action="backoffice.php?=1" method="post">
             
             Codice Libro: <input type="text" name="codlibro" required>

@@ -42,8 +42,9 @@ header('Location: '.$newURL);*/
         }
         //else{
         ?>
+<h1> Inserisci Autore </h1>
 <form action="backoffice.php?=1" method="post">
-            
+    
             Nome: <input type="text" name="nome" required>
             <br>
             Cognome: <input type="text" name="cognome" required>
@@ -54,6 +55,7 @@ header('Location: '.$newURL);*/
             <br>
             Vivente:<input type="checkbox" name="vivo">
             <br>
+            
             <input type="reset" name="cancella" value="cancella">            
             <input type="submit" name="Invio" value="Invio"> 
 </form>

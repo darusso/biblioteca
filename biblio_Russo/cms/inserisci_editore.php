@@ -39,12 +39,13 @@ header('Location: '.$newURL);*/
         }
         //else{
         ?>
+<h1> Inserisci Editore </h1>
 <form action="backoffice.php?=1" method="post">
             
             
-            Nome: <input type="text" name="autore" required>
+            Nome: <input type="text" name="nome" required>
             <br>
-            Città: <input type="text" name="titolo" required>
+            Città: <input type="text" name="citta" required>
             <br>
             
             <input type="reset" name="cancella" value="cancella">            
