@@ -1,7 +1,4 @@
-<?php
-/*$newURL="index.php?bkoff=1";
-header('Location: '.$newURL);*/
-?>
+
 <?php
         //include 'my_library.php';
         if(isset($_POST['Invio'])){
