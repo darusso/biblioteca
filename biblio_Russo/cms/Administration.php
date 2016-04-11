@@ -50,6 +50,13 @@
                            <li><a href="../../biblio_Russo/cms/modifica_editore.php">Modifica Editore</a></li>
                         </ul>
                 </li>
+                <li class="active">
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Elimina </a>
+                       <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                           <li><a href="../../biblio_Russo/cms/elimina_libro.php">Elimina Libro</a></li>
+                           
+                        </ul>
+                </li>
                 
                 
         </div><!-- /#sidebar-wrapper -->
